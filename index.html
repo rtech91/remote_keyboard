@@ -1,0 +1,11 @@
+<script type="text/javascript" src="/jquery.js"></script>
+<a href="#" onclick="slide('prev');" style="font-size: 16px;"><</a> |
+<a href="#" onclick="slide('next');" style="font-size: 16px;">></a>
+<script>
+  function slide(val){
+    $.ajax({
+      type: 'GET',
+      url: '/' + val,
+    });
+  }
+</script>
