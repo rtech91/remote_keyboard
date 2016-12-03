@@ -4,8 +4,6 @@ var path = require('path');
 var robot = require("robotjs");
 
 http.createServer(function (request, response) {
-    console.log(request.url);
-    console.log('request starting...');
     if(request.url === '/next') {
       robot.keyTap('right');
     }
