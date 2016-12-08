@@ -27,15 +27,6 @@ http.createServer(function (request, response) {
         case '.json':
             contentType = 'application/json';
             break;
-        case '.png':
-            contentType = 'image/png';
-            break;      
-        case '.jpg':
-            contentType = 'image/jpg';
-            break;
-        case '.wav':
-            contentType = 'audio/wav';
-            break;
     }
 
     fs.readFile(filePath, function(error, content) {
