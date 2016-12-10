@@ -1,0 +1,478 @@
+/* --------------- small screen ---------*/
+@media screen and (min-width: 320px) and (max-width: 400px) {
+	body {
+		font-size: 6px;
+	}
+	.button {
+		width: 6.1%;
+		line-height: 10px;
+		margin-right: 3px;
+		padding: 3px;
+	}
+	.row {
+		height: 4em;
+		padding: 6px 6px 0 6px;
+	}
+	.last {
+		margin-right: 0;
+	}
+	.backspace,
+	.slash,
+	.enter,
+	.shift-right,
+	.ctrl-right {
+		margin-right: 0;
+		margin-left: 3px;
+	}
+	.escape,
+	.tab,
+	.capslock,
+	.shift-left {
+		margin-right: 3px;
+	}
+	.ctrl-left,
+	.win,
+	.alt-left {
+		width: 8.6%;
+	}
+	.space {
+	width: 35%;
+	}
+	.alt-right, .none, .menu, .ctrl-right {
+    width: 7.9%;
+	}
+	.backspace {
+        width: 7%;
+	}
+	.tab {
+		width: 7%;
+	}
+	.slash {
+        width: 6%;
+	}
+	.capslock {
+        width: 9.7%;
+	}
+	.enter {
+		width: 10.4%;
+	}
+	.shift-left, .shift-right {
+    width: 13.6%;
+	}
+}	
+@media screen and (min-width: 350px) and (max-width: 380px) {
+	.backspace {
+        width: 8.2%;
+	}
+	.tab {
+		width: 8.2%;
+	}
+	.slash {
+        width: 6.2%;
+	}
+	.capslock {
+        width: 10%;
+	}
+	.enter {
+		width: 11.4%;
+	}
+	.shift-left, .shift-right {
+		width: 14.2%;
+	}
+	.alt-right, .none, .menu, .ctrl-right {
+		width: 8.1%;
+	}
+}
+@media screen and (min-width: 380px) and (max-width: 400px) {
+	.backspace {
+        width: 9.3%;
+	}
+	.tab {
+		width: 8.8%;
+	}
+	.slash {
+        width: 6.5%;
+	}
+	.capslock {
+        width: 10%;
+	}
+	.enter {
+		width: 12.3%;
+	}
+	.shift-left, .shift-right {
+		width: 14.7%;
+	}
+	.alt-right, .none, .menu, .ctrl-right {
+		width: 8.2%;
+	}
+}
+@media screen and (min-width: 400px) and (max-width: 536px) {
+	body {
+		font-size: 7px;
+	}
+	.button {
+		width: 6.1%;
+		line-height: 15px;
+		margin-right: 3px;
+	}
+	.row {
+		height: 4em;
+		padding: 6px 6px 0 6px;
+	}
+	.last {
+		margin-right: 0;
+	}
+	.backspace,
+	.slash,
+	.enter,
+	.shift-right,
+	.ctrl-right {
+		margin-right: 0;
+	}
+	.escape,
+	.tab,
+	.capslock,
+	.shift-left {
+		margin-right: 5px;
+	}
+	.ctrl-left,
+	.win,
+	.alt-left {
+		width: 9%;
+	}
+	.space {
+	width: 34%;
+	}
+	.alt-right, .none, .menu, .ctrl-right {
+    width: 8.1%;
+	}
+	.backspace {
+        width: 8.7%;
+	}
+	.tab {
+		width: 8.7%;
+	}
+	.slash {
+        width: 6%;
+	}
+	.capslock {
+        width: 10.3%;
+	}
+	.enter {
+		width: 11.5%;
+	}
+	.shift-left, .shift-right {
+    width: 14.35%;
+	}
+}
+@media screen and (min-width: 430px) and (max-width: 536px) {
+	.backspace {
+        width: 9.6%;
+	}
+	.tab {
+		width: 9.6%;
+	}
+	.slash {
+        width: 6.2%;
+	}
+	.shift-left, .shift-right {
+		width: 14.7%;
+	}
+	.alt-right, .none, .menu, .ctrl-right {
+		width: 8.25%;
+	}
+	.enter {
+		width: 12.3%;
+	}
+}
+@media screen and (min-width: 536px) and (max-width: 600px) {
+	body {
+		font-size: 0.6em;
+	}
+	.button {
+		width: 6.1%;
+		line-height: 15px;
+	}
+	.row {
+		height: 3.6em;
+		padding: 6px 6px 0 6px;
+	}
+	.escape,
+	.tab,
+	.capslock,
+	.shift-left {
+		margin-right: 5px;
+	}
+	.ctrl-left,
+	.win,
+	.alt-left {
+		width: 8.8%;
+	}
+	.space {
+	width: 35%;
+	}
+	.alt-right, .none, .menu, .ctrl-right {
+    width: 8%;
+	}
+	.ctrl-left,
+	.win,
+	.alt-left {
+		width: 8.6%;
+	}
+	.backspace {
+        width: 7.3%;
+	}
+	.tab {
+		width: 7.3%;
+	}
+	.slash {
+        width: 6%;
+	}
+	.capslock {
+        width: 10%;
+	}
+	.enter {
+		width: 10.6%;
+	}
+	.shift-left, .shift-right {
+    width: 13.8%;
+	}
+}
+
+@media screen and (min-width: 600px) and (max-height: 760px) {
+	body {
+		font-size: 0.8em;
+	}
+	.button {
+		width: 6.1%;
+		line-height: 20px;	
+	}
+	.row {
+		height: 3em;
+		padding: 6px 6px 0 6px;
+	}
+	.escape,
+	.tab,
+	.capslock,
+	.shift-left {
+		margin-right: 5px;
+	}
+	.ctrl-left,
+	.win,
+	.alt-left {
+		width: 8.8%;
+	}
+	.space {
+	width: 35%;
+	}
+	.alt-right, .none, .menu, .ctrl-right {
+    width: 8%;
+	}
+	.backspace {
+        width: 8.6%;
+	}
+	.tab {
+		width: 8%;
+	}
+	.slash {
+        width: 6.7%;
+	}
+	.capslock {
+        width: 9.7%;
+	}
+	.enter {
+		width: 11.8%;
+	}
+	.shift-left, .shift-right {
+    width: 14.3%;
+	}
+}
+@media screen and (min-width: 630px) and (max-height: 670px) {
+	.escape,
+	.tab,
+	.capslock,
+	.shift-left {
+		margin-right: 8px;
+	}
+	.alt-right, .none, .menu, .ctrl-right {
+		width: 8.1%;
+	}
+	.enter {
+		width: 12%;
+	}
+	
+}
+@media screen and (min-width: 670px) and (max-height: 760px) {
+	.row {
+		height: 3.2em;
+	}
+	.escape,
+	.tab,
+	.capslock,
+	.shift-left {
+		margin-right: 8px;
+	}
+	.alt-right, .none, .menu, .ctrl-right {
+		width: 8.2%;
+	}
+	.enter {
+		width: 12.8%;
+	}
+	.slash {
+        width: 7.5%;
+	}
+	.backspace {
+        width: 9.5%;
+	}
+	.shift-left, .shift-right {
+    width: 14.7%;
+	}
+}
+@media screen and (min-width: 730px) and (max-height: 760px) {
+	.backspace {
+        width: 10.3%;
+	}
+	.slash {
+        width: 8.4%;
+	}
+	.capslock {
+		width: 10%;
+	}
+	.shift-left, .shift-right {
+    width: 15%;
+	}
+	.enter {
+		width: 13%;
+	}
+	.alt-right, .none, .menu, .ctrl-right {
+		width: 8.3%;
+	}
+}
+@media screen and (min-width: 760px) and (max-height: 880px) {
+	body {
+		font-size: 1.1em;
+	}
+	.button {
+		width: 6.3%;
+		line-height: 30px;	
+	}
+	.row {
+		height: 3em;
+		padding: 6px 6px 0 6px;
+	}
+	.escape,
+	.tab,
+	.capslock,
+	.shift-left {
+		margin-right: 6px;
+	}
+	.backspace {
+        width: 8%;
+	}
+	.tab {
+		width: 8%;
+	}
+	.slash {
+        width: 6.3%;
+	}
+	.capslock {
+        width: 9.7%;
+	}
+	.enter {
+		width: 11.6%;
+	}
+	.shift-left, .shift-right {
+    width: 14.3%;
+	}
+	.ctrl-left,
+	.win,
+	.alt-left {
+		width: 9.3%;
+	}
+	.space {
+	width: 35%;
+	}
+	.alt-right, .none, .menu, .ctrl-right {
+    width: 7.9%;
+	}
+}
+@media screen and (min-width: 810px) and (max-height: 880px) {
+	.escape,
+	.tab,
+	.capslock,
+	.shift-left {
+		margin-right: 10px;
+	}
+	.backspace {
+        width: 8.3%;
+	}
+	.slash {
+        width: 6.7%;
+	}
+	.capslock {
+        width: 10%;
+	}
+	.alt-right, .none, .menu, .ctrl-right {
+		width: 8%;
+	}
+}
+@media screen and (min-width: 880px) and (max-height: 991px) {
+	body {
+		font-size: 1.3em;
+	}
+	.row {
+		height: 3em;
+		padding: 9px 8px 0 8px;
+	}
+	.button {
+		width: 6.5%;
+		line-height: 35px;	
+	}
+	.escape,
+	.tab,
+	.capslock,
+	.shift-left {
+		margin-right: 4px;
+	}
+	.backspace {
+        width: 7.2%;
+	}
+	.tab {
+		width: 7.5%;
+	}
+	.slash {
+        width: 6.3%;
+	}
+	.capslock {
+        width: 9.7%;
+	}
+	.enter {
+		width: 11%;
+	}
+	.shift-left, .shift-right {
+    width: 14%;
+	}
+	.alt-right, .none, .menu, .ctrl-right {
+    width: 8.1%;
+	}
+	.ctrl-left,
+	.win,
+	.alt-left {
+		width: 9.3%;
+	}
+	.space {
+	width: 35%;
+	}
+	
+}
+@media screen and (min-width: 940px) and (max-height: 991px) {
+	.escape,
+	.tab,
+	.capslock,
+	.shift-left {
+		margin-right: 8px;
+	}
+	.alt-right, .none, .menu, .ctrl-right {
+		width: 8.2%;
+	}
+}

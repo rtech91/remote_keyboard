@@ -1,0 +1,66 @@
+/* --------------- big screen ---------*/
+@media screen and (min-width: 1240px) and (max-height: 1380px) {
+	.row {
+		height: 3.5em;
+	}
+	.escape,
+	.tab,
+	.capslock,
+	.shift-left {
+		margin-right: 15px;
+	}
+	.backspace {
+		width: 8.5%;
+	}
+	.slash {
+		width: 7%;
+	}
+	.alt-right,
+	.none,
+	.menu,
+	.ctrl-right {
+		width: 8.5%;
+	}
+}
+@media screen and (min-width: 1380px) and (max-height: 1480px) {
+	.button {
+	line-height: 75px;	
+	}
+	.backspace {
+		width: 9%;
+	}
+	.slash {
+		width: 7.5%;
+	}
+	.enter {
+		width: 12.3%
+	}
+	.shift-left, 
+	.shift-right {
+		width: 14.7%;
+	}
+}
+@media screen and (min-width: 1480px) and (max-height: 1640px) {
+	body {
+		font-size: 1.8em;
+	}
+	.backspace {
+		width: 9.5%;
+	}
+	.slash {
+		width: 8%;
+	}
+	.enter {
+		width: 13%
+	}
+	.shift-left, 
+	.shift-right {
+		width: 14.9%;
+	}
+	.alt-right,
+	.none,
+	.menu,
+	.ctrl-right {
+		width: 8.6%;
+	}
+}
