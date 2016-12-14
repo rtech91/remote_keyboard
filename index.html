@@ -1,11 +1,22 @@
 <script type="text/javascript" src="/jquery.js"></script>
+<body onload="setInterval(ping, 2000);">
 <a href="#" onclick="slide('prev');" style="font-size: 16px;"><</a> |
 <a href="#" onclick="slide('next');" style="font-size: 16px;">></a>
+</body>
 <script>
   function slide(val){
     $.ajax({
       type: 'GET',
       url: '/' + val,
+    });
+  }
+  function ping(){
+    $.ajax({
+      type: 'GET',
+      url: '/ping',
+      success: function (data) {
+        alert(data);
+      }
     });
   }
 </script>

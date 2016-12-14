@@ -10,6 +10,10 @@ http.createServer(function (request, response) {
     if(request.url === '/prev') {
       robot.keyTap('left');
     }
+    if(request.url === '/ping') {
+      response.writeHead(200, { 'Content-Type': 'text/html' });
+      response.end('ok', 'utf-8');
+    }
 
     var filePath = '.' + request.url;
     if (filePath == './')
