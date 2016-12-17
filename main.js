@@ -5,12 +5,7 @@ var robot = require("robotjs");
 
 http.createServer(function (request, response) {
     console.log(request.url);
-    if(request.url === '/next') {
-      robot.keyTap('right');
-    }
-    if(request.url === '/prev') {
-      robot.keyTap('left');
-    }
+    
     if(request.url.match(/\/key\/(.*)/i) && !request.url.match('/ping')) {
         let keyName = request.url.replace('/key/', '');
         robot.keyTap(keyName);
