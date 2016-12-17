@@ -6,9 +6,20 @@ var robot = require("robotjs");
 http.createServer(function (request, response) {
     console.log(request.url);
     
-    if(request.url.match(/\/key\/(.*)/i) && !request.url.match('/ping')) {
-        let keyName = request.url.replace('/key/', '');
-        robot.keyTap(keyName);
+    if(request.url.match(/\/(key|mouseClick)\/(.*)/i) && !request.url.match('/ping')) {
+        var isMouseClick = false;
+        if(request.url.match(/mouseClick/)) {
+            isMouseClick = true;
+        }
+        var keyName = '';
+        if(isMouseClick === false) {
+            keyName = request.url.replace('/key/', '');
+            robot.keyTap(keyName);
+        }
+        else {
+            keyName = request.url.replace('/mouseClick/', '');
+            robot.mouseClick(keyName);
+        }
     }
     if(request.url === '/ping') {
       response.writeHead(200, { 'Content-Type': 'text/html' });
