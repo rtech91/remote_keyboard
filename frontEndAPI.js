@@ -6,7 +6,7 @@ function pushButtonOnce(button, keyName) {
     $(button).addClass('push');
     $.ajax({
         type: 'GET',
-        url: '/' + keyName,
+        url: '/key/' + keyName,
         success: function(){
             // no operation by default
         }
