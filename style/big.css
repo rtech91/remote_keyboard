@@ -1,5 +1,5 @@
 /* --------------- big screen ---------*/
-@media screen and (min-width: 1240px) and (max-height: 1380px) {
+@media screen and (min-width: 1241px) and (max-height: 1380px) {
 	.row {
 		height: 3.5em;
 	}
@@ -22,7 +22,7 @@
 		width: 8.5%;
 	}
 }
-@media screen and (min-width: 1380px) and (max-height: 1480px) {
+@media screen and (min-width: 1381px) and (max-height: 1480px) {
 	.button {
 	line-height: 75px;	
 	}
@@ -40,7 +40,7 @@
 		width: 14.7%;
 	}
 }
-@media screen and (min-width: 1480px) and (max-height: 1640px) {
+@media screen and (min-width: 1481px) and (max-height: 1640px) {
 	body {
 		font-size: 1.8em;
 	}
