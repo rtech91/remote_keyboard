@@ -6,7 +6,7 @@ var robot = require("robotjs");
 http.createServer(function (request, response) {
     console.log(request.url);
     
-    if(request.url.match(/\/(key|mouseClick)\/(.*)/i) && !request.url.match('/ping')) {
+    if(request.url.match(/\/(key|mouseClick)\/(.*)/i)) {
         var isMouseClick = false;
         if(request.url.match(/mouseClick/)) {
             isMouseClick = true;
@@ -14,18 +14,24 @@ http.createServer(function (request, response) {
         var keyName = '';
         if(isMouseClick === false) {
             keyName = request.url.replace('/key/', '');
-            robot.keyTap(keyName);
+            if(keyName.match(/(control|alt|win)/)) {
+                var keys = keyName.split('_');
+                keys.forEach(function(item, i, array){
+                    robot.keyToggle(item, 'down');
+                });
+                keys.forEach(function(item, i, array){
+                    robot.keyToggle(item, 'up');
+                });
+            }else {
+                robot.keyTap(keyName);
+            }
         }
         else {
             keyName = request.url.replace('/mouseClick/', '');
             robot.mouseClick(keyName);
         }
     }
-    if(request.url === '/ping') {
-      response.writeHead(200, { 'Content-Type': 'text/html' });
-      response.end('ok', 'utf-8');
-    }
-
+    
     var filePath = '.' + request.url;
     if (filePath == './')
         filePath = './index.html';

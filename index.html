@@ -10,7 +10,6 @@
 <script type="text/javascript" src="frontEndAPI.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body onload="setInterval(ping, 5000);">
 <div id="wrapper">
 	<div class="container">
 		<div class="row">
@@ -75,27 +74,16 @@
 			<div class="button shift-right" onclick="pushButtonOnce(this, 'right_shift');">shift</div>
 		</div>
 		<div class="row">
-			<div class="button ctrl-left">ctrl</div>
+			<div class="button ctrl-left" onclick="pushButtonOnce(this, 'control');">ctrl</div>
 			<div class="button win" onclick="pushButtonOnce(this, 'command');">win</div>
-			<div class="button alt-left">alt</div>
+			<div class="button alt-left" onclick="pushButtonOnce(this, 'alt');">alt</div>
 			<div class="button space" onclick="pushButtonOnce(this, 'space');">space</div>
-			<div class="button alt-right">alt</div>
+			<div class="button alt-right" onclick="pushButtonOnce(this, 'alt');">alt</div>
 			<div class="button none" onclick="pushButtonOnce(this, '');">none</div>
 			<div class="button menu last" onclick="pushButtonOnce(this, 'right', true);">menu</div>
-			<div class="button ctrl-right">ctrl</div>
+			<div class="button ctrl-right" onclick="pushButtonOnce(this, 'control');">ctrl</div>
 		</div>
 	</div>
 </div>
-<script>
-function ping(){
-    $.ajax({
-      type: 'GET',
-      url: '/ping',
-      success: function (data) {
-        alert(data);
-      }
-    });
-  }
-</script>
 </body>
 </html>
