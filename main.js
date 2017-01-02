@@ -1,7 +1,9 @@
 var http = require('http');
 var fs = require('fs');
 var path = require('path');
-var robot = require("robotjs");
+var robot = require('kbm-robot');
+
+robot.startJar();
 
 http.createServer(function (request, response) {
     console.log(request.url);
@@ -14,21 +16,25 @@ http.createServer(function (request, response) {
         var keyName = '';
         if(isMouseClick === false) {
             keyName = request.url.replace('/key/', '');
+            // set key name for dot symbol
+            if(keyName === 'dot') {
+                keyName = '.';
+            }
             if(keyName.match(/(control|alt|win)/)) {
                 var keys = keyName.split('_');
                 keys.forEach(function(item, i, array){
-                    robot.keyToggle(item, 'down');
+                    robot.press(item).go();
                 });
                 keys.forEach(function(item, i, array){
-                    robot.keyToggle(item, 'up');
+                    robot.release(item).go();
                 });
             }else {
-                robot.keyTap(keyName);
+                robot.type(keyName).go();
             }
         }
         else {
             keyName = request.url.replace('/mouseClick/', '');
-            robot.mouseClick(keyName);
+            robot.mousePress(keyName).mouseRelease(keyName).go();
         }
     }
     
